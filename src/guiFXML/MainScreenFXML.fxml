@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.1867612293144208" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainScreen">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="595.0">
+         <children>
+            <Button fx:id="consoleScreen" disable="true" layoutX="7.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleConsoleButton" prefHeight="25.0" prefWidth="110.0" text="Console" />
+            <Button fx:id="actionItemsScreen" disable="true" layoutX="127.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleActionItemsButton" prefHeight="25.0" prefWidth="110.0" text="Action Items" />
+            <Button fx:id="memberScreen" disable="true" layoutX="244.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleMemberScreenButton" prefHeight="25.0" prefWidth="110.0" text="Members Screen" />
+            <Button fx:id="teamScreen" disable="true" layoutX="362.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleTeamScreenButton" prefHeight="25.0" prefWidth="110.0" text="Teams Screen" />
+            <Button fx:id="quit" layoutX="481.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleQuitButton" prefHeight="25.0" prefWidth="110.0" text="Quit" />
+            <Text layoutX="387.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Internet:" />
+            <Label fx:id="lbInternetAvailabilityMain" layoutX="444.0" layoutY="54.0" prefHeight="17.0" prefWidth="110.0" />
+         </children></AnchorPane>
+    <AnchorPane fx:id="anchCmdController" minHeight="0.0" minWidth="0.0" prefHeight="345.0" prefWidth="598.0">
+         <children>
+            <PasswordField fx:id="pfPasswordLogin" layoutX="264.0" layoutY="157.0" />
+            <Label fx:id="lbAlertLogin" layoutX="264.0" layoutY="182.0" prefHeight="17.0" prefWidth="149.0" />
+            <Label layoutX="178.0" layoutY="161.0" text="Password" />
+            <Label layoutX="176.0" layoutY="119.0" text="Username" />
+            <Button fx:id="btLogin" layoutX="264.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleLoginButton" text="Login" />
+            <TextField fx:id="tfUsernameLogin" layoutX="264.0" layoutY="115.0" />
+            <Label alignment="CENTER" layoutX="181.0" layoutY="31.0" text="DELLA 10" textAlignment="CENTER" textFill="#6f6f6f" wrapText="true">
+               <font>
+                  <Font size="57.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
